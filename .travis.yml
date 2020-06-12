@@ -8,10 +8,10 @@ notifications:
 node_js:
   - iojs
 before_install:
-  - npm i -g npm@^2.0.0
+  - npm i -g npm@^6.14.5
 before_script:
   - npm prune
 script:
-  - npm run test
+  - npm run test:single
 after_success:
   - npm run semantic-releases
