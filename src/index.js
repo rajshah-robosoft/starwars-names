@@ -3,7 +3,7 @@ var starWarsNames = require('./starwars-name.json');
 var getRandomItem = uniqueRandomArray(starWarsNames);
 
 module.exports = {
-  all: starWarsNames,
+  getAllNames: starWarsNames,
   random: uniqueRandomArray(starWarsNames),
   randomLists: random,
   isNameAvailable: find,
