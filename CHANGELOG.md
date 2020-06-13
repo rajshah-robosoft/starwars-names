@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/rajshah-robosoft/starwars-names/compare/v1.1.0...v1.2.0) (2020-06-13)
+
+
+### Features
+
+* **getlistfromsearchitem:** enter name and it will return list of similler names ([fd65b59](https://github.com/rajshah-robosoft/starwars-names/commit/fd65b597cab314777f9e03a4584eafabdf84c69b))
+
 # [1.1.0](https://github.com/rajshah-robosoft/starwars-names/compare/v1.0.0...v1.1.0) (2020-06-13)
 
 
