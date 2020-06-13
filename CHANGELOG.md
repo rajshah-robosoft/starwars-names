@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/rajshah-robosoft/starwars-names/compare/v1.2.0...v1.3.0) (2020-06-13)
+
+
+### Features
+
+* changed name of all to getAllNames ([dec4f49](https://github.com/rajshah-robosoft/starwars-names/commit/dec4f4958f4aa09324059da789e3a70459e5a601))
+
 # [1.2.0](https://github.com/rajshah-robosoft/starwars-names/compare/v1.1.0...v1.2.0) (2020-06-13)
 
 
