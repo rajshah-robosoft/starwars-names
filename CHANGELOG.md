@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/rajshah-robosoft/starwars-names/compare/v1.0.0...v1.1.0) (2020-06-13)
+
+
+### Features
+
+* **search:** return true or false if passed name is available in Skywalker names ([4fcc684](https://github.com/rajshah-robosoft/starwars-names/commit/4fcc684c96dc803841e64672cec84b049998f4cf))
+
 # 1.0.0 (2020-06-13)
 
 
