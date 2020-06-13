@@ -5,8 +5,8 @@ var getRandomItem = uniqueRandomArray(starWarsNames);
 module.exports = {
   all: starWarsNames,
   random: uniqueRandomArray(starWarsNames),
-  random: random,
-  find: find
+  randomLists: random,
+  isNameAvailable: find
 }
 
 function find(search) {

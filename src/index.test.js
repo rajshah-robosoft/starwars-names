@@ -25,7 +25,7 @@ describe('raj-shah-starwars-names', function () {
     })
 
     it('should return an array of random items if passed a number', function () {
-      let randomItems = starWars.random(3);
+      let randomItems = starWars.randomLists(3);
       randomItems.forEach(function (item) {
         expect(starWars.all).to.include(item);
       })
@@ -34,7 +34,7 @@ describe('raj-shah-starwars-names', function () {
 
   describe('find', function () {
     it('should return true or false', function () {
-      expect(starWars.find('Luke Skywalker')).to.equal(true);
+      expect(starWars.isNameAvailable('Luke Skywalker')).to.equal(true);
     })
   })
 })
