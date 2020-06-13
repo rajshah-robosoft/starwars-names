@@ -7,7 +7,7 @@
     "commit": "git-cz",
     "test": "mocha src/index.test.js -w",
     "test:single": "mocha src/index.test.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -28,13 +28,33 @@
     "unique-random-array": "2.0.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@semantic-release/npm": "7.0.5",
+    "@semantic-release/release-notes-generator": "9.0.1",
     "chai": "4.2.0",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
     "mocha": "8.0.1",
-    "semantic-release": "^17.0.8"
+    "semantic-release": "17.0.8"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": true
+        }
+      ],
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ],
+    "branch": "master"
   }
 }
