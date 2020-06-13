@@ -21,13 +21,13 @@ describe('raj-shah-starwars-names', function () {
   describe('random', function () {
     it('should return a random item from the starWars.getAllNames', function () {
       var randomItem = starWars.random();
-      expect(starWars.all).to.include(randomItem);
+      expect(starWars.getAllNames).to.include(randomItem);
     })
 
     it('should return an array of random items if passed a number', function () {
       let randomItems = starWars.randomLists(3);
       randomItems.forEach(function (item) {
-        expect(starWars.all).to.include(item);
+        expect(starWars.getAllNames).to.include(item);
       })
     })
   })
