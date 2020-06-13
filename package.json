@@ -6,7 +6,9 @@
   "scripts": {
     "commit": "git-cz",
     "test": "mocha src/index.test.js -w",
-    "test:single": "mocha src/index.test.js",
+    "check-coverage": "nyc report --reporter=lcov --check-coverage --lines 90 --branches 50 --statements 90 --functions 90",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "test:single": "nyc mocha src/index.test.js && nyc report --reporter=lcov",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -34,10 +36,12 @@
     "@semantic-release/npm": "7.0.5",
     "@semantic-release/release-notes-generator": "9.0.1",
     "chai": "4.2.0",
+    "codecov.io": "0.1.6",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
     "ghooks": "2.0.4",
     "mocha": "8.0.1",
+    "nyc": "15.1.0",
     "semantic-release": "17.0.8"
   },
   "czConfig": {
@@ -60,7 +64,7 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run test:single"
+      "pre-commit": "npm run test:single && npm run check-coverage"
     }
   }
 }

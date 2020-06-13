@@ -37,4 +37,10 @@ describe('raj-shah-starwars-names', function () {
       expect(starWars.isNameAvailable('Luke Skywalker')).to.equal(true);
     })
   })
+
+  describe('getListFromSearchItem', function () {
+    it('should return array of names', function () {
+      expect(starWars.getListFromSearchItem('luke')).to.deep.equal([ 'Luke Skywalker' ]);
+    })
+  })
 })
