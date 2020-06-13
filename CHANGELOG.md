@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/rajshah-robosoft/starwars-names/compare/v1.3.0...v1.4.0) (2020-06-13)
+
+
+### Features
+
+* **getrandomname:** added task specific name for random ([18e59cc](https://github.com/rajshah-robosoft/starwars-names/commit/18e59cc4d0456be7249d65582dd79fa83152eb64))
+
+
+### Performance Improvements
+
+* pull of matser branch ([31b38b5](https://github.com/rajshah-robosoft/starwars-names/commit/31b38b5a76853692d584578975d1897ce381c45f))
+
 # [1.3.0](https://github.com/rajshah-robosoft/starwars-names/compare/v1.2.0...v1.3.0) (2020-06-13)
 
 
