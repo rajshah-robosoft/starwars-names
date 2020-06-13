@@ -6,7 +6,12 @@ module.exports = {
   all: starWarsNames,
   random: uniqueRandomArray(starWarsNames),
   randomLists: random,
-  isNameAvailable: find
+  isNameAvailable: find,
+  getListFromSearchItem: findName
+}
+
+function findName(name) {
+  return starWarsNames.filter(item => item.toLowerCase().startsWith(name))
 }
 
 function find(search) {
