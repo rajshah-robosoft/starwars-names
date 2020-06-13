@@ -31,4 +31,10 @@ describe('raj-shah-starwars-names', function () {
       })
     })
   })
+
+  describe('find', function () {
+    it('should return true or false', function () {
+      expect(starWars.find('Luke Skywalker')).to.equal(true);
+    })
+  })
 })
