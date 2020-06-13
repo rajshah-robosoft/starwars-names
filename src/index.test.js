@@ -20,7 +20,7 @@ describe('raj-shah-starwars-names', function () {
 
   describe('random', function () {
     it('should return a random item from the starWars.getAllNames', function () {
-      var randomItem = starWars.random();
+      var randomItem = starWars.getRandomName();
       expect(starWars.getAllNames).to.include(randomItem);
     })
 
